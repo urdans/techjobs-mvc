@@ -6,6 +6,8 @@ import org.apache.commons.csv.CSVRecord;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
+
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -148,6 +150,9 @@ public class JobData {
 
                 for (String headerLabel : headers) {
                     newJob.put(headerLabel, record.get(headerLabel));
+//                    newJob.put(WordUtils.capitalize(headerLabel), record.get(headerLabel));
+
+
                 }
 
                 allJobs.add(newJob);
